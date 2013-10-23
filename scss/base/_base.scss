@@ -1,0 +1,21 @@
+body {
+	font-family: $merriweather;
+	font-size: 18px;
+	line-height: 1.5em;
+	color: $dark-grey;
+}
+
+h1 {
+	font-family: $raleway;
+}
+
+a, a:link, a:visited {
+	color: $salmon;
+	transition: all 200ms ease;
+	-webkit-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	&:hover {
+		color: darken($salmon, 10%)
+	}
+}
