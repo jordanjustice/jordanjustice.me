@@ -1,0 +1,16 @@
+footer {
+
+}
+
+.bio, .social {
+	@include span-columns(6);
+	@include media($tablet) {
+		@include span-columns(4);
+	}
+	@include media($mobile) {
+		@include span-columns(4);
+	}
+	h3 {
+		text-align: center;
+	}
+}

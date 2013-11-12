@@ -1,3 +1,49 @@
+body {
+	background: $darkgray;
+	color: $darkgray;
+	font-family: $merriweather;
+	line-height: 1.5em;
+}
+
 .container {
 	@include outer-container;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $raleway;
+	text-transform: uppercase;
+}
+
+header, #content {
+	background: $white;
+}
+
+
+#title {
+	h1 {
+		a {
+			font-weight: 900;
+			color: $salmon;
+			text-decoration: none;
+		}
+	}
+}
+
+nav {
+	a {
+		font-family: $raleway;
+		color: $salmon;
+		text-decoration: none;
+		text-transform: uppercase;
+		@include transition (all 200ms ease);
+		&:hover {
+			color: $white;
+			background: $salmon;
+		}
+
+	}
+}
+
+footer {
+	color: $white;
 }

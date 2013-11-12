@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Merriweather:400,300,300italic,400italic,700,700italic,900italic,900);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -343,6 +344,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  background: #333333;
+  color: #333333;
+  font-family: "Merriweather", serif;
+  line-height: 1.5em; }
+
 .container {
   *zoom: 1;
   max-width: 68em;
@@ -353,6 +360,33 @@ table {
     display: table; }
   .container:after {
     clear: both; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase; }
+
+header, #content {
+  background: white; }
+
+#title h1 a {
+  font-weight: 900;
+  color: #ee6557;
+  text-decoration: none; }
+
+nav a {
+  font-family: "Raleway", sans-serif;
+  color: #ee6557;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  nav a:hover {
+    color: white;
+    background: #ee6557; }
+
+footer {
+  color: white; }
 
 header {
   height: 60px; }
@@ -423,10 +457,36 @@ nav {
         line-height: 60px;
         display: block; }
 
-#content {
+#home-posts h2 {
+  text-align: center; }
+#home-posts .posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none; }
+
+.bio, .social {
   display: block;
   float: left;
   margin-right: 2.35765%;
-  width: 100%; }
-  #content:last-child {
+  width: 48.82117%; }
+  .bio:last-child, .social:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .bio, .social {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .bio:last-child, .social:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .bio, .social {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .bio:last-child, .social:last-child {
+        margin-right: 0; } }
+  .bio h3, .social h3 {
+    text-align: center; }
