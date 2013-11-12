@@ -1,2 +1,3 @@
 name: Jordan Justice
 pygments: true
+permalink: /articles/:title
