@@ -1,6 +1,9 @@
 @import "bourbon/bourbon";
 @import "grid-settings";
 @import "neat/neat";
+@import "normalize";
 @import "variables/colors";
 @import "base";
 @import "layout/header";
+@import "layout/content";
+@import "layout/footer";
