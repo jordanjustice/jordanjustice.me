@@ -18,6 +18,15 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 100%;
 }
 
+a {
+	color: $salmon;
+	@include transition (all 200ms ease);
+	&:hover {
+		color: darken($salmon, 10%);
+		text-decoration: none;
+	}
+}
+
 header, #content {
 	background: $white;
 }
@@ -97,4 +106,18 @@ article#post-wrapper {
 
 footer {
 	color: $white;
+	.bio, .social {
+		h3 {
+			font-size: 2em;
+		}
+	}
+	#social-links {
+		li {
+			a {
+				font-family: $raleway;
+				font-weight: 700;
+				text-decoration: none;
+			}
+		}
+	}
 }

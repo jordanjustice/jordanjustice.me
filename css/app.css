@@ -369,6 +369,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   line-height: 100%; }
 
+a {
+  color: #ee6557;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  a:hover {
+    color: #e93b29;
+    text-decoration: none; }
+
 header, #content {
   background: white; }
 
@@ -420,6 +429,12 @@ article#post-wrapper #post-title {
 
 footer {
   color: white; }
+  footer .bio h3, footer .social h3 {
+    font-size: 2em; }
+  footer #social-links li a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    text-decoration: none; }
 
 header {
   height: 60px; }
@@ -550,3 +565,9 @@ nav {
         margin-right: 0; } }
   .bio h3, .social h3 {
     text-align: center; }
+  .bio #social-links, .social #social-links {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .bio #social-links li, .social #social-links li {
+      text-align: center; }
