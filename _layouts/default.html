@@ -10,34 +10,32 @@
 
     </head>
     <body>
-
+        <div class='container'>
             <header id="header">
-              <div class='container'>
                 <div id="title">
-                  <h2><a href="/">{{ site.name }}</a></h2>
+                  <h1><a href="/">{{ site.name }}</a></h1>
                 </div>
                 <nav>
                   <ul>
-                    <li><a href="/projects" title="Blog">Projects</a></li>
+                    <li><a href="/blog" title="Blog">Blog</a></li>
+                    <li><a href="/projects" title="Projects">Projects</a></li>
                   </ul>
                 </nav>
-              </div>
-              
             </header><!-- /header -->
               
                 {{ content }}
 
             <footer>
-                <div class='container'>
+        
                 <div class="bio">
                   
                 </div>
                 <div class="social">
                   
                 </div>
-              </div>
+    
             </footer>
-              
+        </div><!-- /container -->          
 
     </body>
 </html>
