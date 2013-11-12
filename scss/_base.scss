@@ -1,17 +1,21 @@
 body {
 	background: $darkgray;
 	color: $darkgray;
+	font-size: 18px;
 	font-family: $merriweather;
-	line-height: 1.5em;
+	line-height: 150%;
+	-webkit-font-smoothing: antialiased;
 }
 
 .container {
 	@include outer-container;
+	@include pad(0 10px);
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $raleway;
-	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 100%;
 }
 
 header, #content {
@@ -25,6 +29,7 @@ header, #content {
 			font-weight: 900;
 			color: $salmon;
 			text-decoration: none;
+			line-height: 60px;
 		}
 	}
 }
@@ -41,6 +46,52 @@ nav {
 			background: $salmon;
 		}
 
+	}
+}
+
+#home-posts {
+	h2 {
+		font-size: 3em;
+	}
+	li {
+		border-bottom: 1px solid $lightgray;
+		@include transition (all 200ms ease);
+		&:hover {
+			background: $lightgray;
+			border-bottom: 1px solid $salmon;
+		}
+		a {
+		font-size: 2em;
+		font-weight: 900;
+		color: $salmon;
+		text-decoration: none;
+		}
+		.post-date {
+			font-style: italic;
+		}
+	}
+	
+}
+
+
+article#post-wrapper {
+	#post-title {
+		text-align: center;
+		h2 {
+			font-family: $merriweather;
+			font-size: 3em;
+			line-height: 100%;
+			margin: 0;
+		}
+		.post-date {
+			font-style: italic;
+		}
+	}
+
+	#post {
+		p, pre {
+			
+		}
 	}
 }
 

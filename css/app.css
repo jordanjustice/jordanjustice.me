@@ -347,14 +347,17 @@ table {
 body {
   background: #333333;
   color: #333333;
+  font-size: 18px;
   font-family: "Merriweather", serif;
-  line-height: 1.5em; }
+  line-height: 150%;
+  -webkit-font-smoothing: antialiased; }
 
 .container {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  padding: 0 10px; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -363,7 +366,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase; }
+  font-weight: 900;
+  line-height: 100%; }
 
 header, #content {
   background: white; }
@@ -371,7 +375,8 @@ header, #content {
 #title h1 a {
   font-weight: 900;
   color: #ee6557;
-  text-decoration: none; }
+  text-decoration: none;
+  line-height: 60px; }
 
 nav a {
   font-family: "Raleway", sans-serif;
@@ -385,6 +390,34 @@ nav a {
     color: white;
     background: #ee6557; }
 
+#home-posts h2 {
+  font-size: 3em; }
+#home-posts li {
+  border-bottom: 1px solid #eeeeee;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  #home-posts li:hover {
+    background: #eeeeee;
+    border-bottom: 1px solid #ee6557; }
+  #home-posts li a {
+    font-size: 2em;
+    font-weight: 900;
+    color: #ee6557;
+    text-decoration: none; }
+  #home-posts li .post-date {
+    font-style: italic; }
+
+article#post-wrapper #post-title {
+  text-align: center; }
+  article#post-wrapper #post-title h2 {
+    font-family: "Merriweather", serif;
+    font-size: 3em;
+    line-height: 100%;
+    margin: 0; }
+  article#post-wrapper #post-title .post-date {
+    font-style: italic; }
+
 footer {
   color: white; }
 
@@ -392,7 +425,6 @@ header {
   height: 60px; }
 
 #title {
-  line-height: 60px;
   display: block;
   float: left;
   margin-right: 2.35765%;
@@ -457,13 +489,41 @@ nav {
         line-height: 60px;
         display: block; }
 
-#home-posts h2 {
-  text-align: center; }
-#home-posts .posts {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  list-style: none; }
+#home-posts {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  #home-posts:last-child {
+    margin-right: 0; }
+  #home-posts h2 {
+    text-align: center; }
+  #home-posts .posts {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none; }
+    #home-posts .posts li {
+      padding: .5em 0;
+      margin-bottom: 1em; }
+
+#post-wrapper {
+  margin: 80px 0;
+  *zoom: 1; }
+  #post-wrapper:before, #post-wrapper:after {
+    content: " ";
+    display: table; }
+  #post-wrapper:after {
+    clear: both; }
+  #post-wrapper p, #post-wrapper pre {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%; }
+    #post-wrapper p:last-child, #post-wrapper pre:last-child {
+      margin-right: 0; }
 
 .bio, .social {
   display: block;

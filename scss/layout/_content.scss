@@ -1,8 +1,10 @@
 #content {
-	
+
 }
 
 #home-posts {
+	@include span-columns(6);
+	@include shift(3);
 	h2 {
 		text-align: center;
 	}
@@ -11,5 +13,18 @@
 		padding: 0;
 		text-align: center;
 		list-style: none;
+		li {
+			padding: .5em 0;
+			margin-bottom: 1em;
+		}
+	}
+}
+
+#post-wrapper {
+	margin: 80px 0;
+	@include clearfix;
+	p,pre {
+		@include span-columns(8);
+		@include shift(2);
 	}
 }
