@@ -3,14 +3,9 @@ layout: default
 title: Jordan Justice | Designer, developer, and thinker rooted in Toledo, Ohio. 
 ---
 
-<div id='home-posts'>
-  <h2>Latest Posts</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-      	<p><a href="{{ post.url }}" class='post-title'>{{ post.title }}</a></p>
-      	<p class='post-date'>{{ post.date | date_to_string }}</p>
-    	</li>
-    {% endfor %}
-  </ul>
-</div>
+<header>
+		<h1 id='home-title'>Jordan Justice</h1>
+		<p>I'm a designer, developer, and thinker rooted in Toledo, Ohio. Biking, folk music, coffee, a good read, family, and my community is where I find peace.</p>
+		<p class='btn'><a href="/articles" title="Articles" >Articles</a></p>
+		<p class='btn'><a href="/projects" title="Projects" >Projects</a></p>
+</header>

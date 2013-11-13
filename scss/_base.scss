@@ -1,8 +1,8 @@
 body {
-	background: $darkgray;
+	background: $white;
 	color: $darkgray;
 	font-size: 18px;
-	font-family: $merriweather;
+	font-family: $raleway;
 	line-height: 150%;
 	-webkit-font-smoothing: antialiased;
 }
@@ -13,7 +13,6 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $raleway;
 	font-weight: 900;
 	line-height: 100%;
 }
@@ -27,34 +26,33 @@ a {
 	}
 }
 
-header, #content {
+header {
 	background: $white;
-}
-
-
-#title {
-	h1 {
-		a {
-			font-weight: 900;
-			color: $salmon;
-			text-decoration: none;
-			line-height: 60px;
+	#home-title {
+		font-size: 3em;
+		color: $salmon;
+	}
+	p {
+		font-size: 1.25em;
+		line-height: 150%;
+		@include media($mobile) {
+			font-size: 1em;
 		}
 	}
-}
-
-nav {
-	a {
-		font-family: $raleway;
-		color: $salmon;
-		text-decoration: none;
-		text-transform: uppercase;
-		@include transition (all 200ms ease);
-		&:hover {
-			color: $white;
-			background: $salmon;
+	.btn {
+		font-weight: 600;
+		text-align: center;
+		a {
+			display: inline-block;
+			padding: .5em 0;
+			width: 120px;
+			text-decoration: none;
+			border: 2px solid $salmon;
+			&:hover {
+				background: $salmon;
+				color: $white;
+			}
 		}
-
 	}
 }
 
@@ -105,19 +103,10 @@ article#post-wrapper {
 }
 
 footer {
+	background: $darkgray;
 	color: $white;
-	.bio, .social {
-		h3 {
-			font-size: 2em;
-		}
-	}
-	#social-links {
-		li {
-			a {
-				font-family: $raleway;
-				font-weight: 700;
-				text-decoration: none;
-			}
-		}
+	.copyright {
+		text-align: center;
+		font-size: .75em;
 	}
 }

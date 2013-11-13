@@ -1,44 +1,16 @@
 header {
-	height: 60px;
-}
-
-#title {
-	@include span-columns(4);
+	@include clearfix;
+	@include span-columns(6);
+	@include shift(3);
 	@include media($tablet) {
-		@include span-columns(4);
+		@include span-columns(6);
+		@include shift(1);
 	}
 	@include media($mobile) {
 		@include span-columns(4);
+		@include shift(0);
 	}
-	h1 {
-		margin: 0;
-	}
-}
-
-nav {
-	@include span-columns(8);
-	@include omega();
-	@include media($tablet) {
-		@include span-columns(4);
-	}
-	@include media($mobile) {
-		@include span-columns(4);
-	}
-	ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		float: right;
-		@include media($mobile) {
-			float: none;
-		}
-		li {
-			float: left;
-			a {
-				padding: 0 .5em;
-				line-height: 60px;
-				display: block;
-			}
-		}
-	}
+	#home-title {
+		text-align: center;
+	}	
 }
