@@ -495,6 +495,26 @@ header {
     margin: 0;
     text-align: center; }
 
+#project-wrapper h2 {
+  text-align: center; }
+#project-wrapper p {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 25.58941%; }
+  #project-wrapper p:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    #project-wrapper p {
+      display: block;
+      float: left;
+      margin-right: 3.57866%;
+      width: 74.10533%;
+      margin-left: 12.94733%; }
+      #project-wrapper p:last-child {
+        margin-right: 0; } }
+
 .article-content {
   font-family: "Merriweather", serif; }
   .article-content #blog-logo {

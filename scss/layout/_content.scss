@@ -1,5 +1,15 @@
-#content {
-
+#project-wrapper {
+	h2 {
+		text-align: center;
+	}
+	p {
+		@include span-columns(6);
+		@include shift(3);
+		@include media($tablet) {
+			@include span-columns(6);
+			@include shift(1)
+		}
+	}
 }
 
 .article-content {
