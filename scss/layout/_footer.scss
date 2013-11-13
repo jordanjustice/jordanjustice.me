@@ -1,25 +1,9 @@
 footer {
-
-}
-
-.bio, .social {
-	@include span-columns(6);
-	@include media($tablet) {
-		@include span-columns(4);
-	}
-	@include media($mobile) {
-		@include span-columns(4);
-	}
-	h3 {
+	padding: 40px 0;
+	.social-links {
 		text-align: center;
 	}
-
-	#social-links {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		li {
-			text-align: center;
-		}
-	}
 }
+
+
+	

@@ -35,6 +35,7 @@ header {
 	p {
 		font-size: 1.25em;
 		line-height: 150%;
+		text-align: center;
 		@include media($mobile) {
 			font-size: 1em;
 		}
@@ -45,7 +46,7 @@ header {
 		a {
 			display: inline-block;
 			padding: .5em 0;
-			width: 120px;
+			width: 140px;
 			text-decoration: none;
 			border: 2px solid $salmon;
 			&:hover {
@@ -105,6 +106,12 @@ article#post-wrapper {
 footer {
 	background: $darkgray;
 	color: $white;
+	.social-links {
+		a {
+			font-size: 2.5em;
+			padding: 0 .25em;
+		}
+	}
 	.copyright {
 		text-align: center;
 		font-size: .75em;

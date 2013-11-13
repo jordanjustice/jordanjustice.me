@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Merriweather:400,300,300italic,400italic,700,700italic,900italic,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -384,7 +385,8 @@ header {
     color: #ee6557; }
   header p {
     font-size: 1.25em;
-    line-height: 150%; }
+    line-height: 150%;
+    text-align: center; }
     @media screen and (max-width: 480px) {
       header p {
         font-size: 1em; } }
@@ -394,7 +396,7 @@ header {
     header .btn a {
       display: inline-block;
       padding: .5em 0;
-      width: 120px;
+      width: 140px;
       text-decoration: none;
       border: 2px solid #ee6557; }
       header .btn a:hover {
@@ -432,6 +434,9 @@ article#post-wrapper #post-title {
 footer {
   background: #333333;
   color: white; }
+  footer .social-links a {
+    font-size: 2.5em;
+    padding: 0 .25em; }
   footer .copyright {
     text-align: center;
     font-size: .75em; }
@@ -507,34 +512,7 @@ header {
     #post-wrapper p:last-child, #post-wrapper pre:last-child {
       margin-right: 0; }
 
-.bio, .social {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 48.82117%; }
-  .bio:last-child, .social:last-child {
-    margin-right: 0; }
-  @media screen and (max-width: 768px) {
-    .bio, .social {
-      display: block;
-      float: left;
-      margin-right: 3.57866%;
-      width: 48.21067%; }
-      .bio:last-child, .social:last-child {
-        margin-right: 0; } }
-  @media screen and (max-width: 480px) {
-    .bio, .social {
-      display: block;
-      float: left;
-      margin-right: 7.42297%;
-      width: 100%; }
-      .bio:last-child, .social:last-child {
-        margin-right: 0; } }
-  .bio h3, .social h3 {
+footer {
+  padding: 40px 0; }
+  footer .social-links {
     text-align: center; }
-  .bio #social-links, .social #social-links {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .bio #social-links li, .social #social-links li {
-      text-align: center; }
