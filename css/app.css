@@ -403,22 +403,19 @@ header {
         background: #ee6557;
         color: white; }
 
-#home-posts h2 {
-  font-size: 3em; }
-#home-posts li {
+.posts li {
   border-bottom: 1px solid #eeeeee;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
   transition: all 200ms ease; }
-  #home-posts li:hover {
-    background: #eeeeee;
-    border-bottom: 1px solid #ee6557; }
-  #home-posts li a {
+  .posts li:hover {
+    background: #eeeeee; }
+  .posts li a {
     font-size: 2em;
     font-weight: 900;
-    color: #ee6557;
+    color: #333333;
     text-decoration: none; }
-  #home-posts li .post-date {
+  .posts li .post-date {
     font-style: italic; }
 
 article#post-wrapper #post-title {
@@ -440,6 +437,21 @@ footer {
   footer .copyright {
     text-align: center;
     font-size: .75em; }
+
+footer#blog-footer {
+  background: white;
+  color: #333333;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: .75em; }
+  footer#blog-footer span.amp {
+    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 2em;
+    color: #ee6557;
+    vertical-align: top; }
+  footer#blog-footer a {
+    color: #333333; }
 
 header {
   *zoom: 1;
@@ -473,27 +485,39 @@ header {
       margin-left: 0%; }
       header:last-child {
         margin-right: 0; } }
+  header .headshot {
+    margin-top: 20px;
+    padding: 20px 0; }
+    header .headshot img {
+      display: block;
+      margin: 0 auto; }
   header #home-title {
+    margin: 0;
     text-align: center; }
 
-#home-posts {
+.article-content {
+  font-family: "Merriweather", serif; }
+  .article-content #blog-logo {
+    padding: 40px 0; }
+    .article-content #blog-logo img {
+      display: block;
+      margin: 0 auto; }
+
+.posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%; }
-  #home-posts:last-child {
+  .posts:last-child {
     margin-right: 0; }
-  #home-posts h2 {
-    text-align: center; }
-  #home-posts .posts {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style: none; }
-    #home-posts .posts li {
-      padding: .5em 0;
-      margin-bottom: 1em; }
+  .posts li {
+    padding: .5em 0;
+    margin-bottom: 1em; }
 
 #post-wrapper {
   margin: 80px 0;
@@ -513,6 +537,7 @@ header {
       margin-right: 0; }
 
 footer {
+  margin: 40px 0 0 0;
   padding: 40px 0; }
   footer .social-links {
     text-align: center; }

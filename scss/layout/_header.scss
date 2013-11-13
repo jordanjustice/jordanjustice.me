@@ -10,7 +10,16 @@ header {
 		@include span-columns(4);
 		@include shift(0);
 	}
+	.headshot {
+		margin-top: 20px;
+		padding: 20px 0;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 	#home-title {
+		margin: 0;
 		text-align: center;
 	}	
 }

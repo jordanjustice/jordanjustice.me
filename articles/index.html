@@ -1,16 +1,17 @@
 ---
-layout: default
-title: Jordan Justice | Designer, developer, and thinker rooted in Toledo, Ohio. 
+layout: articles
+title: Articles | Life & Times of Jordan Justice 
 ---
 
-<div id='home-posts'>
-  <h2>Latest Posts</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-      	<p><a href="{{ post.url }}" class='post-title'>{{ post.title }}</a></p>
-      	<p class='post-date'>{{ post.date | date_to_string }}</p>
-    	</li>
-    {% endfor %}
-  </ul>
+<div id='blog-logo'>
+	<img src="http://placehold.it/150x150" class='kavanah-icon'>
 </div>
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li>
+    	<p><a href="{{ post.url }}" class='post-title'>{{ post.title }}</a></p>
+    	<p class='post-date'>{{ post.date | date_to_string }}</p>
+  	</li>
+  {% endfor %}
+</ul>

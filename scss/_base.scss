@@ -57,29 +57,25 @@ header {
 	}
 }
 
-#home-posts {
-	h2 {
-		font-size: 3em;
-	}
+.posts {
 	li {
 		border-bottom: 1px solid $lightgray;
 		@include transition (all 200ms ease);
 		&:hover {
 			background: $lightgray;
-			border-bottom: 1px solid $salmon;
 		}
 		a {
 		font-size: 2em;
 		font-weight: 900;
-		color: $salmon;
+		color: $darkgray;
 		text-decoration: none;
 		}
 		.post-date {
 			font-style: italic;
 		}
 	}
-	
 }
+
 
 
 article#post-wrapper {
@@ -115,5 +111,23 @@ footer {
 	.copyright {
 		text-align: center;
 		font-size: .75em;
+	}
+}
+
+footer#blog-footer {
+	background: $white;
+	color: $darkgray;
+	text-align: center;
+	font-family: $merriweather;
+	font-size: .75em;
+	span.amp {
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+		font-style: italic;
+		font-size: 2em;
+		color: $salmon;
+		vertical-align: top;
+	}
+	a {
+		color: $darkgray;
 	}
 }
