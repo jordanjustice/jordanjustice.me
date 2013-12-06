@@ -383,7 +383,8 @@ a {
 
 iframe {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 header {
   background: white; }
@@ -427,6 +428,9 @@ header {
 
 article#post-wrapper #post-title {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    article#post-wrapper #post-title {
+      font-size: .5em; } }
   article#post-wrapper #post-title h2 {
     font-family: "Merriweather", serif;
     font-size: 3em;
@@ -587,22 +591,22 @@ header {
     display: table; }
   #post-wrapper:after {
     clear: both; }
-  #post-wrapper p, #post-wrapper pre, #post-wrapper ul, #post-wrapper li {
+  #post-wrapper #post-title, #post-wrapper p, #post-wrapper pre, #post-wrapper ul, #post-wrapper li {
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%; }
-    #post-wrapper p:last-child, #post-wrapper pre:last-child, #post-wrapper ul:last-child, #post-wrapper li:last-child {
+    #post-wrapper #post-title:last-child, #post-wrapper p:last-child, #post-wrapper pre:last-child, #post-wrapper ul:last-child, #post-wrapper li:last-child {
       margin-right: 0; }
     @media screen and (max-width: 480px) {
-      #post-wrapper p, #post-wrapper pre, #post-wrapper ul, #post-wrapper li {
+      #post-wrapper #post-title, #post-wrapper p, #post-wrapper pre, #post-wrapper ul, #post-wrapper li {
         display: block;
         float: left;
         margin-right: 7.42297%;
         width: 100%;
         margin-left: 0%; }
-        #post-wrapper p:last-child, #post-wrapper pre:last-child, #post-wrapper ul:last-child, #post-wrapper li:last-child {
+        #post-wrapper #post-title:last-child, #post-wrapper p:last-child, #post-wrapper pre:last-child, #post-wrapper ul:last-child, #post-wrapper li:last-child {
           margin-right: 0; } }
 
 footer {

@@ -32,6 +32,7 @@ a {
 iframe {
 	display: block;
 	margin: 0 auto;
+	max-width: 100%;
 }
 
 header {
@@ -94,6 +95,9 @@ header {
 
 article#post-wrapper {
 	#post-title {
+		@include media($mobile) {
+			font-size: .5em;
+		}
 		text-align: center;
 		h2 {
 			font-family: $merriweather;
