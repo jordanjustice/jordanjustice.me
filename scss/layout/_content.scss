@@ -68,5 +68,9 @@
 	p,pre, ul, li {
 		@include span-columns(8);
 		@include shift(2);
+		@include media($mobile) {
+			@include span-columns(4);
+			@include shift(0);
+		}
 	}
 }

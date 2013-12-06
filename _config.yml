@@ -1,7 +1,6 @@
 name: Jordan Justice
 pygments: true
 permalink: /articles/:title
-baseurl: http://jordanjustice.me
 
 ftp_host: 'jordanjustice.me'
 ftp_dir: '/jordanjustice.me'
