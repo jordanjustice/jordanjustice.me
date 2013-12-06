@@ -25,7 +25,7 @@
 
 .posts {
 	margin: 0;
-	padding: 0;
+	padding: 2em 0;
 	text-align: center;
 	list-style: none;
 	@include span-columns(6);
@@ -39,7 +39,7 @@
 #post-wrapper {
 	margin: 80px 0;
 	@include clearfix;
-	p,pre {
+	p,pre, ul, li {
 		@include span-columns(8);
 		@include shift(2);
 	}

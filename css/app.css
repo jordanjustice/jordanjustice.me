@@ -345,6 +345,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  background: #333333; }
+
 body {
   background: white;
   color: #333333;
@@ -377,6 +380,10 @@ a {
   a:hover {
     color: #e93b29;
     text-decoration: none; }
+
+iframe {
+  display: block;
+  margin: 0 auto; }
 
 header {
   background: white; }
@@ -525,7 +532,7 @@ header {
 
 .posts {
   margin: 0;
-  padding: 0;
+  padding: 2em 0;
   text-align: center;
   list-style: none;
   display: block;
@@ -547,13 +554,13 @@ header {
     display: table; }
   #post-wrapper:after {
     clear: both; }
-  #post-wrapper p, #post-wrapper pre {
+  #post-wrapper p, #post-wrapper pre, #post-wrapper ul, #post-wrapper li {
     display: block;
     float: left;
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%; }
-    #post-wrapper p:last-child, #post-wrapper pre:last-child {
+    #post-wrapper p:last-child, #post-wrapper pre:last-child, #post-wrapper ul:last-child, #post-wrapper li:last-child {
       margin-right: 0; }
 
 footer {

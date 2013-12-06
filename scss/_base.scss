@@ -1,3 +1,6 @@
+html	{
+	background: $darkgray;}
+
 body {
 	background: $white;
 	color: $darkgray;
@@ -24,6 +27,11 @@ a {
 		color: darken($salmon, 10%);
 		text-decoration: none;
 	}
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
 }
 
 header {
