@@ -502,25 +502,49 @@ header {
     margin: 0;
     text-align: center; }
 
-#project-wrapper h2 {
-  text-align: center; }
-#project-wrapper p {
+#project-wrapper {
   display: block;
   float: left;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%; }
-  #project-wrapper p:last-child {
+  #project-wrapper:last-child {
     margin-right: 0; }
   @media screen and (max-width: 768px) {
-    #project-wrapper p {
+    #project-wrapper {
       display: block;
       float: left;
       margin-right: 3.57866%;
       width: 74.10533%;
       margin-left: 12.94733%; }
-      #project-wrapper p:last-child {
+      #project-wrapper:last-child {
         margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    #project-wrapper {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%; }
+      #project-wrapper:last-child {
+        margin-right: 0; } }
+  #project-wrapper h2 {
+    text-align: center;
+    color: #ee6557; }
+  #project-wrapper p.project-type {
+    text-align: center; }
+  #project-wrapper img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    transition: all 200ms ease; }
+    #project-wrapper img:hover {
+      opacity: .5; }
+  #project-wrapper .project {
+    margin: 80px 0;
+    border-bottom: 1px solid #eeeeee; }
 
 .article-content {
   font-family: "Merriweather", serif; }
