@@ -1,3 +1,7 @@
 name: Jordan Justice
 pygments: true
 permalink: /articles/:title
+
+ftp_host: 'jordanjustice.me'
+ftp_dir: '/jordanjustice.me'
+ftp_passive: false

@@ -542,6 +542,15 @@ header {
   margin-left: 25.58941%; }
   .posts:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    .posts {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: 0%; }
+      .posts:last-child {
+        margin-right: 0; } }
   .posts li {
     padding: .5em 0;
     margin-bottom: 1em; }
