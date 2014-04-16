@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <title>Jordan Justice's Résumé</title>
 <meta name="viewport" content="width=device-width" />
-<link href='http://fonts.googleapis.com/css?family=Raleway:900,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:300,400,800,700' rel='stylesheet' type='text/css'>
 <style>
 /**
  * "Variables"
@@ -14,13 +14,13 @@ h1, h2, .date {
 	font: small-caps normal 100% Raleway, sans-serif;
 }
 
-h1, 
+h1,
 header > h1 > span,
 header > ul > li:before {
 	color: #eb4938;
-	font-weight: 900;
+	font-weight: 800;
 }
- 
+
 /**
  * Style
  */
@@ -30,6 +30,7 @@ header > ul > li:before {
 html {
 	background: #9BA2B0;
 	font-size: 14px;
+	-webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -39,13 +40,14 @@ body {
 	background: white;
 	box-shadow: 1px 1px 5px 2px rgba(0,0,0,.3);
 	font: 100%/1.5 Raleway, sans-serif;
-	
+	font-weight: 300;
+
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	-o-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-	
+
 	-moz-transition: .5s font-size;
 	-ms-transition: .5s font-size;
 	-o-transition: .5s font-size;
@@ -98,36 +100,36 @@ header {
 		line-height: 1.05;
 		font-variant: normal;
 	}
-	
+
 		header > h1 > span {
 			display: inline-block;
 			margin-left: -2.7em;
 			vertical-align: super;
 			font-size: 50%;
 		}
-		
+
 	header > ul {
 		display: block;
 		margin-bottom: .5em;
 	}
-	
+
 		header > ul > li {
 			display: inline;
 			list-style: none;
 		}
-		
+
 		header > ul > li:before {
 			content: '● ';
 		}
-		
+
 		header > ul > li:first-child:before {
 			content: none;
 		}
-	
+
 	address {
 		font-style: normal;
 	}
-	
+
 ol.timeline {
 	padding: 0;
 	border: 0 solid #ddd;
@@ -140,15 +142,15 @@ ol.timeline {
 		border: 1px solid white; /* Chrome printing bug */
 		border-top-color: #ccc;
 	}
-	
+
 	ol.timeline > li:first-child {
 		border-top: 0;
 	}
-	
+
 		ol.timeline > li > p {
 			margin: 0;
 		}
-		
+
 		ol.timeline > li > .date {
 			float: left;
 			margin-left: .1em;
@@ -156,11 +158,11 @@ ol.timeline {
 			color: gray;
 			font-size: 110%;
 		}
-	
+
 		ol.timeline > li > .date ~ p {
 			margin-left: 9rem;
 		}
-		
+
 .note {
 	margin-top: .4em;
 	font-size: 75%;
@@ -193,9 +195,9 @@ footer {
 
 @media print {
 	body {
-		box-shadow: none;	 
+		box-shadow: none;
 	}
-	
+
 	header > h1 {
 		color: black;
 	}
@@ -235,21 +237,18 @@ footer {
 		</li>
 		<li>
 			<p class="date">June 2011</p>
-			<p>Launched entire Iowa database at <a href="http://vintageaerial.com">Vintage Aerial</a>: Enabled users to interact with a simple UI and search by address and explore over 500,000 historical aerial photographs from Iowa.</p>
+			<p>Launched entire Iowa database at <a href="http://vintageaerial.com">Vintage Aerial</a>: </p>
+			<p class="note"> Enabled users to interact with a simple UI and search by address and explore over 500,000 historical aerial photographs from Iowa.</p>
 		</li>
 </section>
 
 <section id="technical-skills">
 	<h1>Technical skills</h1>
-	<p>I have a broad understanding of various design focused technologies, including:</p>
+	<p>I have a broad understanding of various technologies, including:</p>
 	<ul>
 	  <li>Adobe Creative Suite</li>
-	  <li>HTML &amp; CSS/SCSS</li>
-	  <li>CMS (Drupal &amp; Squarespace)</li>
-	  <li>eCommerce</li>
-	  <li>Basic level training of JavaScript and OOP</li>
-	  <li>Version Control (Git/github)</li>
-	  <li>Design implementation in Rails framework</li>
+	  <li>HTML &amp; CSS/SCSS, Javascript (including jQuery)</li>
+	  <li>CMS Platforms (Drupal &amp; Squarespace)</li>
 	  <li>Social Media/Online Engagement Tools</li>
 	  <li>Videography/Video Production</li>
 	  <li>Photography</li>
@@ -273,7 +272,7 @@ footer {
 			<p>I.T. Manager • <a href="http://sfcgraphics.com">SFC Graphics</a></p>
 			<p class="note">Network admin, help desk support, front-end web development, and project management.</p>
 		</li>
-		
+
 		<li>
 			<p class="date">2009–2011</p>
 			<p>Director of Archive Development • <a href="http://vintageaerial.com">Vintage Aerial</a></p>
@@ -303,7 +302,7 @@ footer {
 	<ol class="timeline">
 		<li>
 			<p class="date">2008-2009</p>
-			<p><strong>Computer Science Engineering</strong></p>
+			<p>Computer Science Engineering</p>
 			<p class="note">University of Toledo</p>
 		</li>
 	</ol>
@@ -311,11 +310,11 @@ footer {
 
 <section id="interests">
 	<h1>Professional interests</h1>
-	<p>Graphic design, web design, responsive design, typography, 
-	front-end web development, 
-	web usability &amp; accessibility, UX/UI, social media, marketing, 
+	<p>Servant leadership, organizational management, graphic design, web design, responsive design, typography,
+	front-end web development,
+	web usability &amp; accessibility, UX/UI, social media, marketing,
 	technical writing, photography, videography.
-	</p>	
+	</p>
 </section>
 
 <footer>
