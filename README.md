@@ -1,5 +1,3 @@
-# Jordan Justice
+# JordanJustice.me
 
-My personal blog and portfolio.
-
-Built with Jekyll.
+A new version of my personal site using [Next.js](https://nextjs.org/)
