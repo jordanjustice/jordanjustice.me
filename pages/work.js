@@ -6,7 +6,7 @@ export default function FirstPost() {
     <>
       <Layout>
         <Head>
-          <title>Work</title>
+          <title>Work | Jordan Justice</title>
         </Head>
         <h1 className="font-extrabold text-3xl">Work</h1>
       </Layout>

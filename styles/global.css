@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply font-extrabold text-3xl mb-6;
+  }
+
+  a {
+    @apply text-blue-700 underline font-medium;
+  }
+  a:visited {
+    @apply text-gray-600;
+  }
+
+  header a,
+  header a:visited {
+    @apply no-underline font-normal text-current mx-2;
+  }
+
+  footer a,
+  footer a:visited {
+    @apply no-underline font-normal text-current;
+  }
+}
