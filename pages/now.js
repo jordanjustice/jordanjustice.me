@@ -27,7 +27,7 @@ export default function Now() {
         Like many others this year, I got (back) into sourdough. A few years ago
         a friend who sold loaves made with beer and cheese at our local farmers'
         market was kind enough to share the process with me and get me started.
-        I stuck with if for a few months, but eventually moved on.
+        I stuck with it for a few months, but eventually moved on.
       </p>
       <p>
         But now with kids and weekly pizza night, I've kept a starter alive and
