@@ -1,8 +1,12 @@
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Layout({ home, children }) {
   return (
     <div className="container max-w-xl">
+      <Head>
+        <link rel="icon" href="/me.png" />
+      </Head>
       <header className="h-12 flex items-center justify-between mb-8 py-4 text-sm">
         {!home && (
           <Link href="/">
@@ -16,12 +20,18 @@ export default function Layout({ home, children }) {
           </Link>
         )}
         <div className="ml-auto">
-          <Link href="/work">Work</Link>
-          <Link href="https://www.github.com/jordanjustice">GitHub</Link>
+          <span className="mx-2">
+            <Link href="/work">Work</Link>
+          </span>
+          <span className="mx-2">
+            <Link href="https://www.github.com/jordanjustice">GitHub</Link>
+          </span>
         </div>
       </header>
-      <main>{children}</main>
-      <footer className="mt-8 py-8 text-xs">
+      <main className="prose prose-blue prose-sm sm:prose sm:prose-blue">
+        {children}
+      </main>
+      <footer className="mt-8 py-8 text-xs text-gray-500">
         <p>
           Built with Next.js & Tailwind CSS •{" "}
           <Link href="https://www.github.com/jordanjustice/jordanjustice.me">

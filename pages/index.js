@@ -9,14 +9,13 @@ export default function Home() {
         <title>
           Jordan Justice | Designer, developer, leader, and community advocate
         </title>
-        <link rel="icon" href="/me.png" />
       </Head>
 
       <img className="w-1/2 mx-auto" src="/thumbs-up.png" />
 
       <h1>Hi, I'm Jordan!</h1>
 
-      <p className="mb-4 text-lg">
+      <p className="text-2xl">
         I <Link href="/work">work</Link> as a designer, developer, leader, and
         community advocate.
       </p>

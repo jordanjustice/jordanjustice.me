@@ -19,7 +19,7 @@ export default function Now() {
         interested in mountain biking. Now that winter is setting in, we're
         learning new card games, snuggling for movies, and embracing video
         games. We're lucky to have stability in work and finances and to have
-        had close family and friends all in good health. Occasionally I miss
+        had close family and friends all in good health. Occasionally, I miss
         having a lunch hour to myself... 🤷🏼‍♂️
       </p>
       <h2>Pizza and Bread</h2>
@@ -51,8 +51,8 @@ export default function Now() {
         planning/strategy, and UI/UX design and development. Still love working
         with React and GraphQL.
       </p>
-      <p className="italic text-xs text-blue-500">
-        Updated December 10th, 2020 from Toledo, Ohio
+      <p className="text-xs text-blue-900 bg-blue-50 inline-block p-1 rounded">
+        Updated December 10th, 2020, from Toledo, Ohio
       </p>
     </Layout>
   );
