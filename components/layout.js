@@ -8,7 +8,7 @@ export default function Layout({ home, children }) {
           <Link href="/">
             <div className="flex items-center cursor-pointer">
               <img
-                className="w-12 -ml-3 transition-transform transform hover:rotate-12 hover:scale-110"
+                className="w-8 -ml-3 mr-2 transition-transform transform hover:rotate-12 hover:scale-110"
                 src="/me.png"
               />
               Jordan Justice

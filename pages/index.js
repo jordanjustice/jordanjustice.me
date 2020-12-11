@@ -9,7 +9,7 @@ export default function Home() {
         <title>
           Jordan Justice | Designer, developer, leader, and community advocate
         </title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/me.png" />
       </Head>
 
       <img className="w-1/2 mx-auto" src="/thumbs-up.png" />
