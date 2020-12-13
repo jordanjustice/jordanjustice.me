@@ -1,9 +1,13 @@
 import Link from "next/link";
+import Head from "next/head";
 import Layout from "../components/layout";
 
 export default function Uses() {
   return (
     <Layout>
+      <Head>
+        <title>Uses | Jordan Justice</title>
+      </Head>
       <h1>Uses</h1>
       <p>Quick list of some of the things I enjoy using day to day.</p>
       <h2>Equipment</h2>
