@@ -9,9 +9,18 @@ export default function Home() {
         <title>
           Jordan Justice | Designer, developer, leader, and community advocate
         </title>
+        <meta
+          name="description"
+          content="Designer, developer, leader, and community advocate living in Toledo,
+          Ohio."
+        />
       </Head>
 
-      <img className="w-1/2 mx-auto" src="/thumbs-up.png" />
+      <img
+        className="w-1/2 mx-auto"
+        src="/thumbs-up.png"
+        alt="Jordan Justice thumbs up memoji"
+      />
 
       <h1>Hi, I'm Jordan!</h1>
 

@@ -5,7 +5,7 @@ export default function Layout({ home, children }) {
   return (
     <div className="container max-w-xl">
       <Head>
-        <link rel="icon" href="/me.png" />
+        <link rel="icon" href="/me.png" alt="Jordan Justice grinning memoji" />
       </Head>
       <header className="h-12 flex items-center justify-between mb-8 py-4 text-sm">
         {!home && (
