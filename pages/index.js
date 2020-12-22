@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import Layout from "../components/layout";
 import Prose from "../components/prose";
 
@@ -17,11 +18,16 @@ export default function Home() {
         />
       </Head>
 
-      <img
-        className="w-1/2 mx-auto"
-        src="/thumbs-up.png"
-        alt="Jordan Justice thumbs up memoji"
-      />
+      <div className="w-1/2 mx-auto">
+        <Image
+          height="272px"
+          width="272px"
+          priority={true}
+          src="/thumbs-up.png"
+          alt="Jordan Justice thumbs up memoji"
+        />
+      </div>
+
       <Prose>
         <h1>Hi, I'm Jordan!</h1>
 
