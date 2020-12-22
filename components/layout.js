@@ -28,9 +28,7 @@ export default function Layout({ home, children }) {
           </span>
         </div>
       </header>
-      <main className="prose prose-blue prose-sm sm:prose sm:prose-blue">
-        {children}
-      </main>
+      <main>{children}</main>
       <footer className="mt-8 py-8 text-xs text-gray-500">
         <p>
           Built with Next.js & Tailwind CSS •{" "}

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
+import Prose from "../components/prose";
 
 export default function Home() {
   return (
@@ -21,19 +22,20 @@ export default function Home() {
         src="/thumbs-up.png"
         alt="Jordan Justice thumbs up memoji"
       />
+      <Prose>
+        <h1>Hi, I'm Jordan!</h1>
 
-      <h1>Hi, I'm Jordan!</h1>
+        <p className="text-2xl">
+          I <Link href="/work">work</Link> as a designer, developer, leader, and
+          community advocate.
+        </p>
 
-      <p className="text-2xl">
-        I <Link href="/work">work</Link> as a designer, developer, leader, and
-        community advocate.
-      </p>
-
-      <p>
-        Want to learn more? See what I'm up to <Link href="/now">now</Link>, or
-        explore my tools and processes on my <Link href="/uses">uses</Link>{" "}
-        page.
-      </p>
+        <p>
+          Want to learn more? See what I'm up to <Link href="/now">now</Link>,
+          or explore my tools and processes on my <Link href="/uses">uses</Link>{" "}
+          page.
+        </p>
+      </Prose>
     </Layout>
   );
 }
