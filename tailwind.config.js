@@ -8,6 +8,9 @@ module.exports = {
         DEFAULT: "1rem",
       },
     },
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
     extend: {},
   },
   variants: {
