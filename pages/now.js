@@ -27,7 +27,7 @@ export default function Now() {
           is my latest collaboration project. I've had this idea for a bit, and
           finally found a partner to handle all the editorial work involved with
           it. From a design and development perspective, it gives me an
-          opportunity to build something I've been curious in for a while. Most
+          opportunity to build something I've been curious about for a while. Most
           local news and editorial sites are either plagued by ads or use weird
           Wordpress themes or funky PDF magazine-like experience apps. This is
           using Next.js under the hood and a TBD headless-CMS (
