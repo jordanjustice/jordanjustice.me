@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import Head from "next/head";
 import Link from "next/link";
 import Prose from "../components/prose";
+import Image from "next/image";
 
 export default function Now() {
   return (
@@ -11,22 +12,61 @@ export default function Now() {
       </Head>
       <Prose>
         <h1>Now</h1>
-        <h2>At home and outside (a lot)</h2>
+        <Image
+          src="/toledo-sunday.png"
+          width={3}
+          height={1}
+          layout="responsive"
+          className="rounded-md"
+          alt="The Toledo Sunday Magazine Logo"
+        />
         <p>
-          Living in the U.S. this year has meant staying home often. While I
-          miss some more community focused events and advocacy work that have
-          been a large part of my life for the past decade, there is definitely
-          joy and hope in being around my wife and kids so much. We've gone for
-          walks pretty much every day, explored new parks, and my oldest child
-          got interested in mountain biking. Now that winter is setting in,
-          we're learning new card games, snuggling for movies, and embracing
-          video games. We're lucky to have stability in work and finances and to
-          have had close family and friends all in good health. Occasionally, I
-          miss having a lunch hour to myself... 🤷🏼‍♂️
+          <strong>
+            <em>The Toledo Sunday Magazine</em>
+          </strong>{" "}
+          is my latest collaboration project. I've had this idea for a bit, and
+          finally found a partner to handle all the editorial work involved with
+          it. From a design and development perspective, it gives me an
+          opportunity to build something I've been curious about for a while. Most
+          local news and editorial sites are either plagued by ads or use weird
+          Wordpress themes or funky PDF magazine-like experience apps. This is
+          using Next.js under the hood and a TBD headless-CMS (
+          <Link href="https://www.sanity.io/">Sanity.io</Link> is the likely
+          choice). <Link href="https://toledosunday.com">Subscribe here.</Link>
+        </p>
+        <h2>Wintering outside</h2>
+        <div className="flex flex-wrap h-32 sm:h-60">
+          <div className="relative box-border border-white border-2 w-2/3 rounded-md overflow-hidden">
+            <Image
+              src="/cohen-202101.jpeg"
+              // width={4032}
+              // height={3024}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              alt="Jordan's oldest child, Cohen, examining a snowy landscape."
+            />
+          </div>
+          <div className="relative box-border border-white border-2 w-1/3 rounded-md overflow-hidden max-h-full">
+            <Image
+              src="/dana-leor-202101.jpeg"
+              // width={3024}
+              // height={4032}
+              layout="fill"
+              objectFit="cover"
+              objectPosition="left"
+              alt="Jordan's wife, Dana, and youngest child, Leor, hiking through snow."
+            />
+          </div>
+        </div>
+        <p>
+          With social distancing still suggested in the U.S., we still find
+          ourselves exploring outside, even with the cold Ohio winter. The kids
+          love it, and my wife and I are constantly learning to embrace it.
         </p>
         <h2>Pizza and Bread</h2>
         <p>
-          Like many others this year, I got (back) into sourdough. A few years
+          Like many others last year, I got (back) into sourdough. A few years
           ago a friend who sold loaves made with beer and cheese at our local
           farmers' market was kind enough to share the process with me and get
           me started. I stuck with it for a few months, but eventually moved on.
@@ -54,7 +94,7 @@ export default function Now() {
           working with React and GraphQL.
         </p>
         <p className="text-xs text-blue-900 bg-blue-50 inline-block p-1 rounded">
-          Updated December 10th, 2020, from Toledo, Ohio
+          Updated February 21st, 2021, from Toledo, Ohio
         </p>
       </Prose>
     </Layout>
