@@ -17,6 +17,11 @@ export default function FirstPost() {
             Doing work—the hard and generous work—has been a great gift to me. I
             can only hope the things I produce are gifts to others.
           </p>
+          <Gig 
+            title={<>Engineer at <span style={{ color: "#556ce8" }}>Camino</span></>}
+            date="2021 - Present"
+            description="Camino is setting the new standard for customer service in Government. On the engineering team, I focus on frontend development using React, Typescript, Tailwind, and other tools to creating a fantastic user-experience."
+          />
           <Gig
             title={
               <>
@@ -24,7 +29,7 @@ export default function FirstPost() {
                 <span style={{ color: "#ea002a" }}>Concentrek</span>
               </>
             }
-            date="2020 - Present"
+            date="2020 - 2021"
             description={
               <>
                 Back at Concentrek (same agency new name)! This time I'm working
