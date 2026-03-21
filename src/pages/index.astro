@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Prose from "../components/Prose.astro";
+---
+
+<Layout
+	title="Jordan Justice | Designer, developer, leader, and community advocate"
+>
+	<div class="w-1/2 mx-auto">
+		<Image
+			height="272"
+			width="272"
+			priority
+			src="/thumbs-up.png"
+			alt="Jordan Justice thumbs up memoji"
+		/>
+	</div>
+
+	<Prose>
+		<h1>Hi, I'm Jordan!</h1>
+
+		<p class="text-2xl">
+			I <a href="/work">work</a> as a designer, developer, leader, and community advocate.
+		</p>
+
+		<p>
+			Want to learn more? See what I'm up to <a href="/now">now</a>.
+		</p>
+	</Prose>
+</Layout>
