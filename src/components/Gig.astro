@@ -1,0 +1,14 @@
+---
+interface Props {
+  date: string;
+  description: string;
+  title: string | HTMLElement;
+}
+const { date, description, title } = Astro.props;
+---
+
+<div class="shadow mb-8 p-4 rounded-2xl">
+  <p class="text-gray-500 text-sm" style={{ margin: 0 }}>{date}</p>
+  <h2 style={{ marginTop: 0 }} set:html={title} />
+  <p style={{ margin: 0 }} set:html={description} />
+</div>
